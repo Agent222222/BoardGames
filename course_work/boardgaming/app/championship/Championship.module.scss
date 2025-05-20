@@ -1,0 +1,133 @@
+@import "../globals.scss";
+
+.bracketWrapper {
+    padding: 20px;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.main_title{
+    @extend %font1;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    color: $color_5;
+    margin: 15px 0 20px 0 ;
+    font-weight: bolder;
+    padding-left: 7px;
+    color: $color_5;
+}
+
+.bracket {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.side {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    height: 50vh;
+}
+
+.side_2 {
+    width: 40vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 10px;
+    height: 50vh;
+}
+
+
+.round {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    min-width: 70px;
+}
+
+.match {
+    background-color: #bebebe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.match:hover {
+    background-color: $color_4;
+    transform: scale(1.05);
+}
+
+.final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+
+    .match {
+        background-color: $color_8;
+        width: 80px;
+        height: 40px;
+    }
+}
+
+.filled{
+    background-color: $color_4;
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .round {
+        min-width: 35px;
+        .match {
+            height: 25px;
+        }
+    }
+
+    .final .match {
+        width: 60px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bracket {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .round {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .match {
+        width: 80px;
+        margin: 2px;
+    }
+
+    .final {
+        padding: 20px 0;
+    }
+}

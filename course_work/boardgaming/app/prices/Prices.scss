@@ -1,0 +1,95 @@
+@import "../globals.scss";
+
+.cart_section{
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: $color_4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 260px;
+    padding: 30px;
+
+    .name{
+        width: 94%;
+    }
+
+    .name_range{
+        margin: 10px 0 0 50px;
+        width: 60%;
+    }
+
+    ._amount{
+        text-align: justify;
+    }
+}
+
+.confirmation_bar-caption{
+    width: fit-content;
+    letter-spacing: 2px;
+    @extend %font1;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 5px 0 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cart-title-btn2{
+    transition: transform 0.5s ease;
+    p{
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #000;
+    background-color: #ffffff;
+    border: 1.5px solid $color_7;
+    margin: 20px 0 20px 0;
+    height: 64px;
+    width: 100%;
+}
+
+.cart-title-btn{
+    p{
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px 0 20px 0; 
+    height: 64px;
+    width: 100%;
+}
+
+.total_cost{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    margin: 0 0 40px 0;
+    .total_c_desc{
+        @extend %font2;
+        font-size: 14px;
+        margin-right:20px;
+    }
+    .total_c_amount{
+        @extend %font1;
+        margin-right: 100px;
+    }
+}
+
+.sections{
+    margin: 80px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 15%;
+}

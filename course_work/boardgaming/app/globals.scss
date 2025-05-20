@@ -1,0 +1,94 @@
+$color_1: #ffff;
+$color_7: rgb(2, 27, 26);
+$color_5: rgb(3, 34, 33);
+$color_6: rgb(3, 98, 76);
+$color_3: rgb(44, 194, 149);
+$color_4: rgb(0, 223, 129);
+$color_8: rgb(17, 126, 57);
+
+
+%font1 {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+%font2 {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+
+.button_template{
+    width: 160px;
+    min-height: 50px;
+    z-index: 3;
+    @extend %font1;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    color: $color_4;
+    background-color: $color_1;
+    border-radius: 8px;
+}
+
+.button_template1{
+    width: 165px;
+    min-height: 50px;
+    z-index: 3;
+    @extend %font1;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    color: $color_1;
+    background-color: $color_4;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.button_template1:hover{
+    box-shadow: 0.4rem 0.4rem 1rem rgba(0, 0, 0, 0.274);
+    transition: 0.3s;
+    color: $color_5;
+}
+
+.button_template2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+    z-index: 3;
+    @extend %font1;
+    font-size: 20px;
+    border: none;
+    color: $color_3;
+    background-color: $color_5;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.button_template2:hover{
+    box-shadow: 0.4rem 0.4rem 1rem rgba(0, 0, 0, 0.274);
+    background-color: $color_1;
+    transition: 0.3s;
+    color: $color_5;
+}
+
+.loading{
+    @extend %font1;
+    font-size: 24px;
+    color: $color_6;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin: 100px 40px 40px 40px;
+}
+
+body{
+    margin: 0;
+    min-height: calc(100vh - 15px);
+}
+
+
+
+

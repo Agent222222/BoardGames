@@ -1,0 +1,202 @@
+@import "../../globals.scss";
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 0 0;
+    
+    a{
+        margin-left: 10px;
+        height: 100px;
+    }
+
+    .nav_sec_0{
+        background-color: $color_1;
+        margin: 0;
+        height: 100;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-end;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        cursor: pointer;
+    }
+
+    .nav_li{
+        z-index: 1;
+        padding: 10px;
+        .active{
+            color:$color_5;
+            transition: 0.3s;
+        }
+    }
+
+    .nav_link{
+        color: $color_4;
+        text-decoration: none;
+        @extend %font1;
+        transition: 0.3s;
+    }
+
+    .nav_link:hover{
+        color: $color_5;
+        transition: 0.3s;
+    }
+
+    .nav_sec_0:before {
+        content: ' ';
+        display: block;
+        background: $color_4;
+        width: 15%;
+        height: 100px;
+        position: absolute;
+        top: 15;
+        left: 216px;
+        transform: skew(40deg);
+        border-radius: 80px 15px 20px 0px  ;
+        z-index: 0;
+        transition: 0.3s;
+    }
+    .nav_sec_1{
+        background-color: $color_1;
+        margin: 0;
+        height: 100;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-end;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        cursor: pointer;
+    }
+    .nav_sec_1:before {
+        content: ' ';
+        display: block;
+        background: $color_4;
+        width: 29%;
+        height: 100px;
+        position: absolute;
+        top: 15;
+        left: 216px;
+        transform: skew(40deg);
+        border-radius: 80px 15px 15px 0px  ;
+        z-index: 0;
+        transition: 0.3s;
+    }
+    .nav_sec_2{
+        background-color: $color_1;
+        margin: 0;
+        height: 100;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-end;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        cursor: pointer;
+    }
+    .nav_sec_2:before {
+        content: ' ';
+        display: block;
+        background: $color_4;
+        width: 41%;
+        height: 100px;
+        position: absolute;
+        top: 15;
+        left: 216px;
+        transform: skew(40deg);
+        border-radius: 80px 15px 15px 0px  ;
+        z-index: 0;
+        transition: 0.3s;
+    }
+
+    .nav_sec_3{
+        background-color: $color_1;
+        margin: 0;
+        height: 100;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-end;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        cursor: pointer;
+    }
+    .nav_sec_3:before {
+        content: ' ';
+        display: block;
+        background: $color_4;
+        width: 55.5%;
+        height: 100px;
+        position: absolute;
+        top: 15;
+        left: 216px;
+        transform: skew(40deg);
+        border-radius: 80px 15px 15px 0px  ;
+        z-index: 0;
+        transition: 0.3s;
+    }
+
+    .nav_sec_4{
+        background-color: $color_1;
+        margin: 0;
+        height: 100;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-end;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        cursor: pointer;
+    }
+    .nav_sec_4:before {
+        content: ' ';
+        display: block;
+        background: $color_4;
+        width: 71%;
+        height: 100px;
+        position: absolute;
+        top: 15;
+        left: 216px;
+        transform: skew(40deg);
+        border-radius: 80px 15px 15px 0px  ;
+        z-index: 0;
+        transition: 0.3s;
+    }
+    
+    .logo_img{
+        height: 100px;
+        width: 240px;
+        padding-bottom: 0;
+        padding-right: 60px;
+        transition: 0.3s;
+        margin-left: 10px;
+    }
+
+    .type1{
+        border-radius: 20px 20px 10px 0px;
+        transition: 0.3s;
+    }
+
+    .type2{
+        border-radius: 20px 20px 10px 20px;
+        transition: 0.3s;
+    }
+}
+
+
+
+
+
+
+
+
+

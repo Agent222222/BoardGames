@@ -1,0 +1,83 @@
+@import "../globals.scss";
+
+.Gametitle{
+    color: $color_7;
+    @extend %font1;
+    font-size: 60px;
+    margin: 60px 0 20px 0;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    z-index: 2;
+    display: flex;
+    justify-self: center;
+}
+
+.line{
+    background-color: $color_6;
+    width: 180px;
+    height: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-self: center;
+}
+
+.GameList{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px;
+
+    .game{
+        list-style-type: none;
+        position: relative;
+        width: 380px;
+        height: 76px;
+        flex-direction: column;
+        margin: 40px 20px ;
+        background-color: $color_4;
+        border-radius: 15px;
+        padding: 10px 40px;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        box-shadow: 1rem 1.4rem 3rem rgba(0, 0, 0, 0.356);
+        transition: 0.3s ease-in-out;
+        @extend %font1;
+        font-weight: 200;
+        font-size: 14px;
+        .caption{
+            @extend %font1;
+            font-weight: 700;
+            font-size: 30px;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: $color_1;
+            border-radius: 10px;
+        }
+
+        .desc_cap{
+            font-weight: 700;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .players{
+            width: 100%;
+            transition: 0.3s ease-in-out;
+            text-align: start;
+            
+        }
+
+        .rules{
+            transition: 0.3s ease-in-out;
+            text-align: justify;
+        }
+    }
+
+    .active{
+        height: 350px;
+    }
+}

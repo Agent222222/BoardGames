@@ -1,0 +1,41 @@
+@import "./globals.scss";
+
+.main_title{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    border-radius: 0 20px 20px 20px;
+    height: 620px;
+    
+    .main_back_img{
+        position: absolute;
+        width: 800px;
+        left: 900px;
+        top: 100px;
+        filter: brightness(10%) saturate(100%) invert(63%) sepia(67%) saturate(706%) hue-rotate(103deg) brightness(96%) contrast(98%);
+    }
+    .title{
+        color: $color_7;
+        @extend %font1;
+        font-size: 70px;
+        margin: 60px 0 20px 0;
+        z-index: 2;
+    }
+    p{
+        color: #484848;
+        @extend %font1;
+        font-size: 12px;
+        letter-spacing: 2px;
+        word-spacing: 4px;
+        font-weight: 100;
+        z-index: 2;
+        margin-bottom: 30px;
+    }
+}
+
+.main{
+    overflow: auto;
+    min-height: calc(100vh - 315px);
+}

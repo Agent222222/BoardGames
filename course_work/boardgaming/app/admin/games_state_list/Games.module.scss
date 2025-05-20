@@ -1,0 +1,113 @@
+@import "../../globals.scss";
+
+.top_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 80px;
+}
+
+.Gametitle{
+    color: $color_7;
+    @extend %font1;
+    font-size: 60px;
+    margin: 30px 0 20px 0;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    z-index: 2;
+    display: flex;
+    justify-self: center;
+}
+
+.line{
+    background-color: $color_6;
+    width: 180px;
+    height: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-self: center;
+}
+
+.GameList{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px;
+
+    .game{
+        list-style-type: none;
+        position: relative;
+        width: 480px;
+        height: 300px;
+        flex-direction: column;
+        margin: 40px 20px ;
+        background-color: $color_4;
+        border-radius: 15px;
+        padding: 10px 40px;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        justify-content: space-between;
+        box-shadow: 1rem 1.4rem 3rem rgba(0, 0, 0, 0.356);
+        transition: 0.3s ease-in-out;
+        @extend %font1;
+        font-weight: 200;
+        font-size: 14px;
+        .caption{
+            @extend %font1;
+            font-weight: 700;
+            font-size: 30px;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: $color_1;
+            border-radius: 10px;
+        }
+
+        .desc_cap{
+            font-weight: 700;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .players{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            transition: 0.3s ease-in-out;
+            text-align: start;
+            margin: 6px 0;
+        }
+
+        .status{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            transition: 0.3s ease-in-out;
+            text-align: start;
+            margin: 6px 0;
+            p{
+                background-color: $color_1;
+                margin: 0 5px;
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+
+        .rules{
+            transition: 0.3s ease-in-out;
+            text-align: justify;
+            margin: 8px 0;
+        }
+    }
+
+    .active{
+        height: 390px;
+    }
+}

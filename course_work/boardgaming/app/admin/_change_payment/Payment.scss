@@ -1,0 +1,145 @@
+@import "../../globals.scss";
+
+.authenticate{
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;         
+    height: 100vh;         
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 10px;
+    select{
+        margin: 20px 0 0 10px;
+        height: 40px;
+        color: $color_1;
+        background-color: $color_3;
+        border-radius: 10px;
+        border: none;
+    }
+}
+
+.main_title_caption{
+    @extend %font1;
+    width: 89%;
+    font-size: 45px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    color: $color_5;
+    margin: 20px 0 30px 0 ;
+    font-weight: bolder;
+    text-align: center;
+    color: $color_5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.section7-login{
+    position: relative;
+    width: 550px;
+    flex-direction: column;
+    padding-left: 60px;
+    margin: 80px 0 80px 0;
+    background-color: $color_4;
+    padding: 8px 10px 20px 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    box-shadow: 1rem 1.4rem 3rem rgba(0, 0, 0, 0.356);
+    select{
+        margin-left: 0px;
+        height: 56px;
+        width: 490px;
+        border-radius: 15px;
+        background-color: #fff;
+        color: $color_4;
+        @extend %font1;
+        border: 1px solid rgba(0, 0, 0, 0.235);
+    }
+}
+
+.cross{
+    margin: 0;
+    background-color: $color_1;
+    padding: 0px 9px 0px 14px;
+    border-radius: 7px;
+    color: $color_7;
+    cursor: pointer;
+}
+
+.section7-login::after{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.section7-consultation{
+    text-align: start;
+    font-size: 43px;
+    width: 400px;
+    text-align: center;
+}
+
+.section7_consultation_description{
+    width: 88%;
+    font-size: 19px;
+    line-height: 22px;
+    letter-spacing: 1.22px;
+    color: $color_5;
+    margin: 0 0 15px 0;
+    text-align: justify;
+    @extend %font2;  
+    font-weight: 200;
+}
+
+
+.name._error{
+    box-shadow: 0 0 15px red;
+}
+
+.check_box_sec{
+    margin-bottom: 15px;
+}
+.check_box_sec2{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.section7_checkbox_label{
+    width: 260px;
+    height: 40px;
+    letter-spacing: 1.51px;
+    color: $color_5;
+    margin: 5px 16px 0 25px;
+    text-align: start;
+    @extend %font2;
+    color: $color_5;
+}
+
+.email{
+    height: 54px;
+    background-color: $color_1;
+    width: 490px;
+    border: 1px solid rgba(0, 0, 0, 0.235);
+    border-radius: 15px;
+    margin: 10px 0 10px 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color_4;
+    @extend %font1;
+    
+}

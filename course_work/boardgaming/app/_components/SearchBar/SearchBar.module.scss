@@ -1,0 +1,87 @@
+@import "../../globals.scss";
+
+.bottom_part{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    .link_section{
+        display: flex;
+        flex-direction: row;
+        .fast_link{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            background-color: $color_5;
+            border-radius: 40px;
+            @extend %font1;
+            font-weight: 700;
+            color: $color_1;
+            padding-left: 2px;
+            transition: 0.3s;
+        }
+
+        .fast_link:hover{
+            background-color: $color_4;
+            box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.274);
+            transition: 0.3s;
+        }
+    }
+
+    .SearchBar{
+        margin-top: 5px;
+        z-index: 3;
+        background-color: $color_4;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 20%;
+        padding: 10px;
+        border-radius: 15px;
+        margin-left: 30px;
+        box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.274);
+        .search {
+            justify-self: center;
+            border: none;
+            padding: 1.1rem 1.6rem;
+            font-size: 0.8rem;
+            border-radius: 0.5rem;
+            width: 94%;
+            transition: all 0.3s;
+            color: var(--color-text);
+            padding: 5px;
+            height: 30px;
+            border: 1px solid #9f9f9f;
+            /* background-color: var(--color-background-900); */
+            background-color: $color_1;
+        }
+        
+        .search::placeholder {
+            color: #9f9f9f;
+        }
+        
+        .search:focus {
+            outline: none;
+            box-shadow: 0 2.4rem 2.4rem rgba(0, 0, 0, 0.1);
+            transform: translateY(-1px);
+        }
+        .search_description{
+            color: $color_5;
+            @extend %font1;
+            padding-left: 6px;
+            font-size: 10px;
+            font-weight: 200;
+        }
+        .search_img{
+            position: absolute;
+            right:80px;
+            top: 605;
+        }
+    }
+    
+}
+
