@@ -7,7 +7,7 @@ const initialState = {
 };
 
 const tableSlice = createSlice({
-    name: "account",
+    name: "table",
     initialState,
     reducers: {
         setTables: (state, action) => {
